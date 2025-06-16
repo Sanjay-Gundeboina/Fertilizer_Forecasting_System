@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #008116;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #008116;
+            color: white;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+        .upload-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .upload-section input[type="file"] {
+            margin: 10px 0;
+        }
+        .upload-section button {
+            background-color: #008116;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .upload-section button:hover {
+            background-color: #005d0d;
+        }
+        .logout-btn {
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin: 20px auto;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .logout-btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        
+        <!-- Users List -->
+        <h3>Registered Users</h3>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td><a href="{{ url_for('delete_user', user_id=user.id) }}" class="delete-btn">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <!-- Upload New Model -->
+        <div class="upload-section">
+            <h3>Upload New ML Model</h3>
+            <form action="{{ url_for('update_model') }}" method="post" enctype="multipart/form-data">
+                <input type="file" name="model_file" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- Logout Button -->
+        <a href="{{ url_for('admin_logout') }}" class="logout-btn">Admin Logout</a>
+    </div>
+</body>
+</html>
