@@ -1,4 +1,4 @@
-# Fertilizer_Recommendation_System
+# Fertilizer_Recommendation_System 🌱
 
 This project is a Fertilizer Recommendation System that assists farmers in selecting the appropriate fertilizers for their crops. It takes into account various environmental and soil factors to make precise fertilizer recommendations, ultimately improving crop yield and reducing the cost of unnecessary fertilizer use
 
@@ -68,6 +68,53 @@ Seaborn: Seaborn is built on top of Matplotlib and provides a higher-level inter
 
 Flask: Flask is a Python web framework used to develop the user interface for the Fertilizer Recommendation System. It handles web requests and serves recommendations to users through a web-based interface
 
+## 🏗️ Installation & Setup
+
+### 🔧 Prerequisites:
+- Python 3.6 or higher
+- pip
+
+### 🔄 Steps:
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/Sanjay-Gundeboina/Fertilizer_Forecasting_System.git
+cd Fertilizer_Forecasting_System
+```
+
+2. **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the Application**
+```bash
+python app.py
+```
+
+4. **Access the Application**
+Go to [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
+
+## 📂 Project Structure
+```
+Fertilizer_Forecasting_System/
+├── static/               # CSS, images
+│   └── style.css,images
+├── templates/            # HTML templates
+│   ├── index.html
+│   ├── login.html
+│   ├── signup.html
+│   ├── model.html
+├── model/                # ML models 
+│   ├── classifier.pkl
+│   └── predictor.pkl
+├── app.py                # Flask application
+├── database.db           # SQLite database
+├── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
+```
+
+
 ## Home Page
 
 This page provides an introduction to the fertilizer recommendation system, its benefits, and a brief overview of how it works. It also includes a user-friendly form where users can input information about their soil, environment, and crop type to receive fertilizer recommendations.
@@ -81,3 +128,8 @@ This page provides an introduction to the fertilizer recommendation system, its 
 
 ![Model Page](fertilizer_forecasting_prj/static/images/model2.png)
 
+
+## 👨‍💻 Author
+**Sanjay Gundeboina**
+
+For queries or suggestions, feel free to connect! 🚀
