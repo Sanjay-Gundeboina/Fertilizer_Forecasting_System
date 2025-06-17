@@ -1,161 +1,58 @@
-# Fertilizer_Forecasting_System
-🌾 **Fertilizer Recommendation System**
-This project is a Fertilizer Recommendation System that assists farmers in selecting the most appropriate fertilizers for their crops. It considers various environmental and soil parameters to make precise fertilizer suggestions, ultimately helping improve crop yield and reduce the cost of excessive or unnecessary fertilizer usage.
+Fertilizer_Recommendation_System
+This project is a Fertilizer Recommendation System that assists farmers in selecting the appropriate fertilizers for their crops. It takes into account various environmental and soil factors to make precise fertilizer recommendations, ultimately improving crop yield and reducing the cost of unnecessary fertilizer use
 
-**🔐 User Authentication (Login System)**
-A user login page is implemented to provide personalized access to the system. Users must log in to submit their data and receive fertilizer recommendations.
+Fertilizer Recommendation:
+Fertilizer recommendation is the process of suggesting the most suitable types and quantities of fertilizers based on factors such as soil composition, temperature, humidity, moisture, and crop type. This project aims to automate this process for the benefit of farmers.
 
-✅ Features:
-Secure login form
+Dataset Information
+The project utilizes a dataset containing information on various agricultural factors. The dataset is structured to include the following variables:
 
-Username and password validation
+Nitrogen: The nitrogen content in the soil. Phosphorus: The phosphorus content in the soil. Potassium: The potassium content in the soil. Temperature: The temperature at the location. Humidity: The relative humidity at the location. Moisture: The soil moisture level. Soil Type: The type of soil at the location. Crop Type: The type of crop to be grown. Fertilizer Names: The names of different types of fertilizers.
 
-Basic session management using Flask
+Main Python Script using Flask
+The main functionality of this project is implemented in a Python script using Flask, a web framework. The script serves as the backend for the web-based fertilizer recommendation system. It takes input from users regarding soil and environmental conditions and provides fertilizer recommendations based on the algorithm used.
 
-Redirect to home page after successful login
+To run the Flask application, make sure you have Flask installed and execute the main Python script
 
-This feature allows only authorized users to access the model interface and submit input, adding a layer of security and personalization to the system.
-**
-📌 Fertilizer Recommendation**
-Fertilizer recommendation involves suggesting the best types and quantities of fertilizers based on:
+Algorithm Used
+The fertilizer recommendation system employs several machine learning algorithms to analyze the dataset and make personalized fertilizer recommendations based on specific crops and environmental conditions. The following algorithms were used:
 
-Soil composition
+Logistic Regression: Logistic regression is used to predict categorical outcomes, and it has been applied here to classify the suitability of fertilizer types for different crops and conditions.
 
-Temperature
+Naive Bayes: The Naive Bayes classifier utilizes Bayes' theorem and is particularly useful for probabilistic classification. In this system, Naive Bayes aids in predicting suitable fertilizers.
 
-Humidity
+Random Forest: Random Forest is a powerful ensemble learning method that combines multiple decision trees to make predictions. In some cases, Random Forest achieved 100% accuracy on both the training and testing sets, demonstrating its strong performance.
 
-Moisture levels
+Decision Tree: Decision trees are used to make decisions by mapping out various options and their possible outcomes. They play a crucial role in understanding the decision-making process behind fertilizer recommendations.
 
-Crop type
+Support Vector Machine (SVM): SVM is a versatile algorithm used for classification tasks. It has shown excellent performance, achieving 99% accuracy in both the training and testing sets in some instances. SVM is instrumental in determining the best fertilizer for specific crop and soil conditions.
 
-This project automates the recommendation process using machine learning, providing quick, personalized guidance for farmers and agricultural experts.
+Despite the high accuracy achieved by Random Forest and SVM. Random Forest Classifier is used for development of model.
 
-📊 Dataset Information
-The project uses a structured dataset containing key agricultural variables:
+Website Development
+develop a fully responsive website that serves as a user-friendly interface for our fertilizer recommendation system. The website will have two main pages:
 
-Nitrogen – Nitrogen content in soil
+Home Page: This page will provide an introduction to the fertilizer recommendation system, its benefits, and a brief overview of how it works. It will also include a user-friendly form where users can input information about their soil, environment, and crop type to receive fertilizer recommendations.
 
-Phosphorus – Phosphorus content in soil
+Model Page: The model page will display the results of the fertilizer recommendations generated by our machine learning algorithms. Users will receive personalized fertilizer suggestions based on their input.
 
-Potassium – Potassium content in soil
+Technologies Used
+HTML: HTML will be used for structuring the content and creating the web pages.
 
-Temperature – Ambient temperature
+CSS: CSS will be employed to style and format the web pages, ensuring a visually appealing and user-friendly design.
 
-Humidity – Relative humidity
+Bootstrap: Bootstrap, a popular CSS framework, will help in creating a responsive and mobile-friendly layout quickly.
 
-Moisture – Soil moisture
+JavaScript: JavaScript will add interactivity to the website, allowing users to submit input, receive recommendations, and interact with the system seamlessly.
 
-Soil Type – Type of soil (e.g., clay, sandy)
+Python: The primary programming language for the entire project, used for data analysis, machine learning, and web development.
 
-Crop Type – Type of crop (e.g., rice, wheat)
+NumPy: NumPy is a fundamental Python library for numerical computations, providing support for arrays and matrices. It is essential for data manipulation and mathematical operations in the recommendation system.
 
-Fertilizer Name – Suitable fertilizer recommendation
+pandas: The pandas library is used for data manipulation and analysis, allowing efficient handling of structured data such as the dataset containing agricultural information.
 
-🧠 Machine Learning Algorithms Used
-Several algorithms were tested for this system:
+Matplotlib: Matplotlib is a popular data visualization library in Python. It is used to create various types of plots and charts to visualize data trends and model performance.
 
-Logistic Regression
+Seaborn: Seaborn is built on top of Matplotlib and provides a higher-level interface for creating attractive and informative statistical graphics. It enhances the aesthetics of data visualizations in the recommendation system.
 
-Naive Bayes
-
-Random Forest (✅ Used in final model)
-
-Decision Tree
-
-Support Vector Machine (SVM)
-
-Random Forest achieved high accuracy and was chosen for model deployment.
-
-🛠️ Main Python Script
-Built with Flask, the app handles:
-
-User login
-
-Input form submission
-
-ML prediction logic
-
-Result display
-
-Run the app:
-
-bash
-Copy
-Edit
-python app.py
-Then visit http://127.0.0.1:5000/.
-
-🌐 Website Features
-🏠 Home Page
-Overview of the system
-
-Form to enter:
-
-Nitrogen, Phosphorus, Potassium
-
-Temperature, Humidity, Moisture
-
-Soil and Crop types
-
-🔐 Login Page
-Simple login form
-
-Redirect to home page after login
-
-Basic authentication logic
-
-📈 Result Page
-Displays recommended fertilizer
-
-Personalized output
-
-🧰 Technologies Used
-Technology	Purpose
-Python	Backend logic, ML modeling
-Flask	Web framework
-HTML/CSS	Structure and style
-Bootstrap	Responsive design
-JavaScript	Interactivity
-NumPy & pandas	Data manipulation
-Matplotlib & Seaborn	Visualization
-SQLite / File-based Auth	(Optional) User data storage
-
-📁 Project Structure
-csharp
-Copy
-Edit
-Fertilizer_Recommendation_System/
-│
-├── app.py                     # Flask application
-├── templates/
-│   ├── login.html             # Login Page
-│   ├── home.html             # Input Form
-│   └── model.html             # Result Page
-├── static/
-│   └── images           
-├── model/
-│   └── fertilizer_model.pkl   # Trained ML model
-├── dataset/
-│   └── fertilizer_data.csv    # Dataset
-├── requirements.txt
-└── README.md
-**📦 Requirements**
-Install all dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Sample requirements.txt:
-
-nginx
-Copy
-Edit
-Flask
-numpy
-pandas
-scikit-learn
-matplotlib
-seaborn
-
+Flask: Flask is a Python web framework used to develop the user interface for the Fertilizer Recommendation System. It handles web requests and serves recommendations to users through a web-based interface 
