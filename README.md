@@ -77,5 +77,11 @@ Flask: Flask is a Python web framework used to develop the user interface for th
 This page provides an introduction to the fertilizer recommendation system, its benefits, and a brief overview of how it works. It also includes a user-friendly form where users can input information about their soil, environment, and crop type to receive fertilizer recommendations.
 
 ![Home Page](fertilizer_forecasting_prj/static/images/home.png)
+
+## Model Page
 ![Model Page](fertilizer_forecasting_prj/static/images/model1.png)
+
+![Model Page](fertilizer_forecasting_prj/static/images/model.png)
+
+![Model Page](fertilizer_forecasting_prj/static/images/model2.png)
 
