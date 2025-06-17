@@ -71,5 +71,6 @@ Matplotlib: Matplotlib is a popular data visualization library in Python. It is 
 Seaborn: Seaborn is built on top of Matplotlib and provides a higher-level interface for creating attractive and informative statistical graphics. It enhances the aesthetics of data visualizations in the recommendation system.
 
 Flask: Flask is a Python web framework used to develop the user interface for the Fertilizer Recommendation System. It handles web requests and serves recommendations to users through a web-based interface
-![Screenshot 2023-09-18 195920](https://github.com/krushna27/Fertilizer_Recommendation_System/assets/76439755/da14fef8-0b3e-44a8-9790-71cb70d4db78)
-![Screenshot 2023-09-18 195853](https://github.com/krushna27/Fertilizer_Recommendation_System/assets/76439755/66d5bb4f-0a97-4f75-a636-30762a6ebfce)
+
+
+
