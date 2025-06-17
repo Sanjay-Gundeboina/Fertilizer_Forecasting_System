@@ -29,13 +29,9 @@ The fertilizer recommendation system employs several machine learning algorithms
 
 Logistic Regression: Logistic regression is used to predict categorical outcomes, and it has been applied here to classify the suitability of fertilizer types for different crops and conditions.
 
-Naive Bayes: The Naive Bayes classifier utilizes Bayes' theorem and is particularly useful for probabilistic classification. In this system, Naive Bayes aids in predicting suitable fertilizers.
-
 Random Forest: Random Forest is a powerful ensemble learning method that combines multiple decision trees to make predictions. In some cases, Random Forest achieved 100% accuracy on both the training and testing sets, demonstrating its strong performance.
 
 Decision Tree: Decision trees are used to make decisions by mapping out various options and their possible outcomes. They play a crucial role in understanding the decision-making process behind fertilizer recommendations.
-
-Support Vector Machine (SVM): SVM is a versatile algorithm used for classification tasks. It has shown excellent performance, achieving 99% accuracy in both the training and testing sets in some instances. SVM is instrumental in determining the best fertilizer for specific crop and soil conditions.
 
 Despite the high accuracy achieved by Random Forest and SVM.
 *Random Forest Classifier* is used for development of model.
@@ -81,7 +77,7 @@ This page provides an introduction to the fertilizer recommendation system, its 
 ## Model Page
 ![Model Page](fertilizer_forecasting_prj/static/images/model1.png)
 
-![Model Page](fertilizer_forecasting_prj/static/images/model.png)
-
 ![Model Page](fertilizer_forecasting_prj/static/images/model2.png)
+
+![Model Page](fertilizer_forecasting_prj/static/images/model.png)
 
