@@ -77,7 +77,7 @@ This page provides an introduction to the fertilizer recommendation system, its 
 ## Model Page
 ![Model Page](fertilizer_forecasting_prj/static/images/model1.png)
 
-![Model Page](fertilizer_forecasting_prj/static/images/model2.png)
-
 ![Model Page](fertilizer_forecasting_prj/static/images/model.png)
+
+![Model Page](fertilizer_forecasting_prj/static/images/model2.png)
 
